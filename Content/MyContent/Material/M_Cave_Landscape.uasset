@@ -1,0 +1,625 @@
+Begin Object Class=/Script/Engine.Material Name="M_Cave_Landscape_Master"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAppendVector Name="MaterialExpressionAppendVector_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionBreakMaterialAttributes Name="MaterialExpressionBreakMaterialAttributes_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionClamp Name="MaterialExpressionClamp_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_22"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_23"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_24"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_25"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_26"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComment Name="MaterialExpressionComment_27"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_7"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_4"
+   End Object
+   Begin Object Class=/Script/Landscape.MaterialExpressionLandscapeLayerCoords Name="MaterialExpressionLandscapeLayerCoords_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_13"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_7"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_12"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_14"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_16"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_8"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_11"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_16"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_9"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionPower Name="MaterialExpressionPower_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_23"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_59"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_8"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionStaticBoolParameter Name="MaterialExpressionStaticBoolParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_10"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_11"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObjectParameter Name="MaterialExpressionTextureObjectParameter_7"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSampleParameter2D Name="MaterialExpressionTextureSampleParameter2D_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_7"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_4"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_2"
+      A=(Expression=MaterialExpressionLinearInterpolate'"M_Cave_Landscape_Master:MaterialExpressionLinearInterpolate_13"')
+      B=(Expression=MaterialExpressionMultiply'"M_Cave_Landscape_Master:MaterialExpressionMultiply_16"')
+      MaterialExpressionEditorX=-3455
+      MaterialExpressionEditorY=945
+      MaterialExpressionGuid=ECCD635F4A6AA1554240A686B412827C
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_1"
+      A=(Expression=MaterialExpressionVectorParameter'"M_Cave_Landscape_Master:MaterialExpressionVectorParameter_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'"M_Cave_Landscape_Master:MaterialExpressionVectorParameter_2"',OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=-5920
+      MaterialExpressionEditorY=1060
+      MaterialExpressionGuid=30E79F2A47B78F5AFC5DE18160996D81
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionAppendVector_3"
+      A=(Expression=MaterialExpressionVectorParameter'"M_Cave_Landscape_Master:MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'"M_Cave_Landscape_Master:MaterialExpressionVectorParameter_0"',OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=-4477
+      MaterialExpressionEditorY=-525
+      MaterialExpressionGuid=01C3DE994AA0C98C9FC1E2942F97BE47
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionBreakMaterialAttributes_0"
+      MaterialAttributes=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cave_Landscape_Master:MaterialExpressionMaterialFunctionCall_14"')
+      MaterialExpressionEditorX=-1232
+      MaterialExpressionEditorY=-96
+      MaterialExpressionGuid=23087FEB43DA2F62FF24DDB8BE51A998
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionClamp_0"
+      Input=(Expression=MaterialExpressionAdd'"M_Cave_Landscape_Master:MaterialExpressionAdd_2"')
+      MaterialExpressionEditorX=-3295
+      MaterialExpressionEditorY=925
+      MaterialExpressionGuid=39B91DD34B413876708FADBD61EE792A
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_22"
+      SizeX=1692
+      SizeY=1107
+      Text="Snow and rock mask settings"
+      MaterialExpressionEditorX=-4697
+      MaterialExpressionEditorY=702
+      MaterialExpressionGuid=B8BEF4064F06D7626E2905A9E35892EE
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_23"
+      SizeX=732
+      SizeY=575
+      Text="Subsurface settings for snow"
+      MaterialExpressionEditorX=-860
+      MaterialExpressionEditorY=680
+      MaterialExpressionGuid=ABADE59F4BFA1EA3FAF7D5894B3A7987
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_24"
+      SizeX=1243
+      SizeY=1615
+      Text="Snow setup"
+      MaterialExpressionEditorX=-6242
+      MaterialExpressionEditorY=-122
+      MaterialExpressionGuid=837421A44872CE0E5450A6B09444B5F5
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_25"
+      SizeX=1143
+      SizeY=1061
+      Text="Rock setup"
+      MaterialExpressionEditorX=-4840
+      MaterialExpressionEditorY=-1260
+      MaterialExpressionGuid=B82E389143927A149E2CC5B5B704B6A3
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_26"
+      SizeX=560
+      SizeY=360
+      Text="Combine rock and snow"
+      MaterialExpressionEditorX=-2960
+      MaterialExpressionEditorY=-100
+      MaterialExpressionGuid=66BB67E642C69FFF507C78B1E2FD708E
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionComment_27"
+      SizeX=746
+      SizeY=702
+      Text="Fuzzy shading setup"
+      MaterialExpressionEditorX=-2140
+      MaterialExpressionEditorY=-20
+      MaterialExpressionGuid=0C142D3449FEAE8879257C8F3527452A
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      MaterialExpressionEditorX=-378
+      MaterialExpressionEditorY=71
+      MaterialExpressionGuid=2C0EF06E405CCA902A5B2A99B8C50620
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_10"
+      R=5.000000
+      MaterialExpressionEditorX=-6000
+      MaterialExpressionEditorY=440
+      MaterialExpressionGuid=984C168D4E8CC6B47AED5B9DE604581A
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_7"
+      MaterialExpressionEditorX=-690
+      MaterialExpressionEditorY=11
+      MaterialExpressionGuid=EFD303104BE4E282C143D1A3955016B7
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_4"
+      Constant=(R=0.800000,G=0.800000,B=0.800000,A=0.000000)
+      MaterialExpressionEditorX=-6080
+      MaterialExpressionEditorY=1260
+      MaterialExpressionGuid=454FBEC848047503A7545F96C5DFC4F6
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionLandscapeLayerCoords_0"
+      MappingScale=1009.000000
+      MaterialExpressionEditorX=-5080
+      MaterialExpressionEditorY=1580
+      MaterialExpressionGuid=712D691E4C12B213A887BFBBDF237E3A
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_13"
+      A=(Expression=MaterialExpressionMultiply'"M_Cave_Landscape_Master:MaterialExpressionMultiply_10"')
+      B=(Expression=MaterialExpressionTextureSampleParameter2D'"M_Cave_Landscape_Master:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=1,Mask=1,MaskR=1)
+      Alpha=(Expression=MaterialExpressionPower'"M_Cave_Landscape_Master:MaterialExpressionPower_2"')
+      MaterialExpressionEditorX=-3795
+      MaterialExpressionEditorY=765
+      MaterialExpressionGuid=E3B9F60242A2956A70176A9203740377
+      Material=Material'"M_Cave_Landscape_Master"'
+      bRealtimePreview=True
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_7"
+      Alpha=(Expression=MaterialExpressionTextureSampleParameter2D'"M_Cave_Landscape_Master:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=1,Mask=1,MaskR=1)
+      ConstB=4.000000
+      MaterialExpressionEditorX=-4135
+      MaterialExpressionEditorY=1205
+      MaterialExpressionGuid=9785301E4273226EA1DC539BBCC3B8E2
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_12"
+      MaterialFunction=MaterialFunction'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/MaterialFunctions/MF_Cave_Landscape.MF_Cave_Landscape"'
+      FunctionInputs(0)=(ExpressionInputId=0087C2324E04A3E4BBCBCC87A79DAB82,Input=(OutputIndex=-1,InputName="Roughness Min"))
+      FunctionInputs(1)=(ExpressionInputId=1EB1BDF347A49A32F07364A58C845400,Input=(OutputIndex=-1,InputName="Roughness Max"))
+      FunctionInputs(2)=(ExpressionInputId=AB95B7CD484F851368FE598F45A7E0BB,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_7"',InputName="In Diffuse 01"))
+      FunctionInputs(3)=(ExpressionInputId=73EA07124605306792F1F89292047E73,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_6"',InputName="In Normal 01"))
+      FunctionInputs(4)=(ExpressionInputId=861D837F42233E452215C4A8BB91C1BB,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_4"',InputName="In Normal 01 Detail"))
+      FunctionInputs(5)=(ExpressionInputId=DF9A15724EEAE29B47C494AB6A383472,Input=(OutputIndex=-1,InputName="In Modulation 01"))
+      FunctionInputs(6)=(ExpressionInputId=3D5F7F1B40FD84687DDF02BE2169CD1F,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_4"',InputName="In Tiling Near"))
+      FunctionInputs(7)=(ExpressionInputId=4DB80B184C858229985ACF87A029FFCB,Input=(OutputIndex=-1,InputName="In Tiling Detail"))
+      FunctionInputs(8)=(ExpressionInputId=F478E2934061DA99107E4EBF2C9394E2,Input=(OutputIndex=-1,InputName="In Normal Tiling"))
+      FunctionInputs(9)=(ExpressionInputId=AF9D55F64C1E489729A337A166777E7E,Input=(OutputIndex=-1,InputName="In Modulation Scale 1"))
+      FunctionInputs(10)=(ExpressionInputId=E95A5ACC438C3F3F65172584AE66C091,Input=(Expression=MaterialExpressionAppendVector'"M_Cave_Landscape_Master:MaterialExpressionAppendVector_3"',InputName="In Color"))
+      FunctionInputs(11)=(ExpressionInputId=C4C5F1A94A7050054655719ACCE09A81,Input=(OutputIndex=-1,InputName="Detail Normal Intensity1"))
+      FunctionInputs(12)=(ExpressionInputId=2C02FE444BF049B61D799FA4C9EF3FD4,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_23"',InputName="Normal Intensity"))
+      FunctionOutputs(0)=(ExpressionOutputId=CB77F7A646D4FCFA5D2A8DA6628A740B,Output=(OutputName="Result Diffuse RGB"))
+      FunctionOutputs(1)=(ExpressionOutputId=0F2D06BC42387560FBCDCDADF02EA362,Output=(OutputName="Modulation"))
+      MaterialExpressionEditorX=-4157
+      MaterialExpressionEditorY=-865
+      MaterialExpressionGuid=D6E8AF7B481C093B03214198CC7D7224
+      Material=Material'"M_Cave_Landscape_Master"'
+      Outputs(0)=(OutputName="Result Diffuse RGB")
+      Outputs(1)=(OutputName="Modulation")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_14"
+      MaterialFunction=MaterialFunction'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/MaterialFunctions/MF_FuzzyShading.MF_FuzzyShading"'
+      FunctionInputs(0)=(ExpressionInputId=73C1B815438CF5BE829642940A548A15,Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cave_Landscape_Master:MaterialExpressionMaterialFunctionCall_8"',InputName="Material Input"))
+      FunctionInputs(1)=(ExpressionInputId=DC9754764A04D4C55B9F3DA2259D0D57,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_6"',InputName="CoreDarkness"))
+      FunctionInputs(2)=(ExpressionInputId=3732D8C74EA4C6C0B2365CB3B36ADC50,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_5"',InputName="Power"))
+      FunctionInputs(3)=(ExpressionInputId=507E15384E39C11A767A8EB8D59B2978,Input=(OutputIndex=-1,InputName="EdgeColour"))
+      FunctionInputs(4)=(ExpressionInputId=E63F46AD4B3191073F61C69D66E213E2,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_3"',InputName="EdgeBrightness"))
+      FunctionInputs(5)=(ExpressionInputId=97160E56441A8492FFC19391AA50B2EF,Input=(OutputIndex=-1,InputName="ColourSwitch"))
+      FunctionInputs(6)=(ExpressionInputId=D41BE2734E83DF5A29E85283A90C63C4,Input=(OutputIndex=-1,InputName="PixelNormal"))
+      FunctionInputs(7)=(ExpressionInputId=926CC0874CA3761CAAC0A0952A91D5F6,Input=(Expression=MaterialExpressionStaticBoolParameter'"M_Cave_Landscape_Master:MaterialExpressionStaticBoolParameter_1"',InputName="FuzzyShadingSwitch"))
+      FunctionOutputs(0)=(ExpressionOutputId=0F2836C5424DB2779AA9B6885374D94B,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-1747
+      MaterialExpressionEditorY=42
+      MaterialExpressionGuid=2EEA948B486321CABA4D8AA62D208732
+      Material=Material'"M_Cave_Landscape_Master"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_16"
+      MaterialFunction=MaterialFunction'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/MaterialFunctions/MF_Cave_Landscape.MF_Cave_Landscape"'
+      FunctionInputs(0)=(ExpressionInputId=0087C2324E04A3E4BBCBCC87A79DAB82,Input=(OutputIndex=-1,InputName="Roughness Min"))
+      FunctionInputs(1)=(ExpressionInputId=1EB1BDF347A49A32F07364A58C845400,Input=(OutputIndex=-1,InputName="Roughness Max"))
+      FunctionInputs(2)=(ExpressionInputId=AB95B7CD484F851368FE598F45A7E0BB,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_10"',InputName="In Diffuse 01"))
+      FunctionInputs(3)=(ExpressionInputId=73EA07124605306792F1F89292047E73,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_11"',InputName="In Normal 01"))
+      FunctionInputs(4)=(ExpressionInputId=861D837F42233E452215C4A8BB91C1BB,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_11"',InputName="In Normal 01 Detail"))
+      FunctionInputs(5)=(ExpressionInputId=DF9A15724EEAE29B47C494AB6A383472,Input=(Expression=MaterialExpressionTextureObjectParameter'"M_Cave_Landscape_Master:MaterialExpressionTextureObjectParameter_1"',InputName="In Modulation 01"))
+      FunctionInputs(6)=(ExpressionInputId=3D5F7F1B40FD84687DDF02BE2169CD1F,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_8"',InputName="In Tiling Near"))
+      FunctionInputs(7)=(ExpressionInputId=4DB80B184C858229985ACF87A029FFCB,Input=(Expression=MaterialExpressionConstant'"M_Cave_Landscape_Master:MaterialExpressionConstant_10"',InputName="In Tiling Detail"))
+      FunctionInputs(8)=(ExpressionInputId=F478E2934061DA99107E4EBF2C9394E2,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_59"',InputName="In Normal Tiling"))
+      FunctionInputs(9)=(ExpressionInputId=AF9D55F64C1E489729A337A166777E7E,Input=(Expression=MaterialExpressionScalarParameter'"M_Cave_Landscape_Master:MaterialExpressionScalarParameter_2"',InputName="In Modulation Scale 1"))
+      FunctionInputs(10)=(ExpressionInputId=E95A5ACC438C3F3F65172584AE66C091,Input=(Expression=MaterialExpressionAppendVector'"M_Cave_Landscape_Master:MaterialExpressionAppendVector_1"',InputName="In Color"))
+      FunctionInputs(11)=(ExpressionInputId=C4C5F1A94A7050054655719ACCE09A81,Input=(OutputIndex=-1,InputName="Detail Normal Intensity1"))
+      FunctionInputs(12)=(ExpressionInputId=2C02FE444BF049B61D799FA4C9EF3FD4,Input=(Expression=MaterialExpressionConstant3Vector'"M_Cave_Landscape_Master:MaterialExpressionConstant3Vector_4"',InputName="Normal Intensity"))
+      FunctionOutputs(0)=(ExpressionOutputId=CB77F7A646D4FCFA5D2A8DA6628A740B,Output=(OutputName="Result Diffuse RGB"))
+      FunctionOutputs(1)=(ExpressionOutputId=0F2D06BC42387560FBCDCDADF02EA362,Output=(OutputName="Modulation"))
+      MaterialExpressionEditorX=-5460
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=6DC3573F42B868373A509A857226F75D
+      Material=Material'"M_Cave_Landscape_Master"'
+      Outputs(0)=(OutputName="Result Diffuse RGB")
+      Outputs(1)=(OutputName="Modulation")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_8"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.MatLayerBlend_Standard"'
+      FunctionInputs(0)=(ExpressionInputId=EFA63D0B46EF032837E8199E5B36B3E0,Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cave_Landscape_Master:MaterialExpressionMaterialFunctionCall_12"',InputName="Base Material"))
+      FunctionInputs(1)=(ExpressionInputId=35B675B84041AED27688219B85171135,Input=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cave_Landscape_Master:MaterialExpressionMaterialFunctionCall_16"',InputName="Top Material"))
+      FunctionInputs(2)=(ExpressionInputId=58AB44C64FD9086FC6AAB1B042B32C2E,Input=(Expression=MaterialExpressionClamp'"M_Cave_Landscape_Master:MaterialExpressionClamp_0"',InputName="Alpha"))
+      FunctionOutputs(0)=(ExpressionOutputId=B7A48B68455CD8D9A45B3AAF57C5E97C,Output=(OutputName="Blended Material"))
+      MaterialExpressionEditorX=-2857
+      MaterialExpressionEditorY=22
+      MaterialExpressionGuid=113AA2464B75F981690741BB225D3C95
+      Material=Material'"M_Cave_Landscape_Master"'
+      Outputs(0)=(OutputName="Blended Material")
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_10"
+      A=(Expression=MaterialExpressionPower'"M_Cave_Landscape_Master:MaterialExpressionPower_0"')
+      B=(Expression=MaterialExpressionLinearInterpolate'"M_Cave_Landscape_Master:MaterialExpressionLinearInterpolate_7"')
+      MaterialExpressionEditorX=-3995
+      MaterialExpressionEditorY=765
+      MaterialExpressionGuid=E4C2AD594DC4150328D175AE5B853F9B
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_11"
+      A=(Expression=MaterialExpressionVectorParameter'"M_Cave_Landscape_Master:MaterialExpressionVectorParameter_7"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      B=(Expression=MaterialExpressionVectorParameter'"M_Cave_Landscape_Master:MaterialExpressionVectorParameter_7"',OutputIndex=4,Mask=1,MaskA=1)
+      MaterialExpressionEditorX=-482
+      MaterialExpressionEditorY=1022
+      MaterialExpressionGuid=1767F7F64DE079CBBD2FA0B6FE1F154E
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_16"
+      A=(Expression=MaterialExpressionTextureSampleParameter2D'"M_Cave_Landscape_Master:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=1,Mask=1,MaskR=1)
+      ConstB=0.500000
+      MaterialExpressionEditorX=-4155
+      MaterialExpressionEditorY=1645
+      MaterialExpressionGuid=1332DBEE4510526F6DEB5DBC75106EEC
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_9"
+      A=(Expression=MaterialExpressionClamp'"M_Cave_Landscape_Master:MaterialExpressionClamp_0"')
+      B=(Expression=MaterialExpressionMultiply'"M_Cave_Landscape_Master:MaterialExpressionMultiply_11"')
+      MaterialExpressionEditorX=-302
+      MaterialExpressionEditorY=742
+      MaterialExpressionGuid=0E46B88F49FEDA8DCB7B87A0B0E93FCD
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionPower_0"
+      Base=(Expression=MaterialExpressionMaterialFunctionCall'"M_Cave_Landscape_Master:MaterialExpressionMaterialFunctionCall_16"',OutputIndex=1)
+      ConstExponent=5.000000
+      MaterialExpressionEditorX=-4415
+      MaterialExpressionEditorY=825
+      MaterialExpressionGuid=CA2F25634931418754E79EA446FBD63E
+      Material=Material'"M_Cave_Landscape_Master"'
+      bRealtimePreview=True
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionPower_2"
+      Base=(Expression=MaterialExpressionTextureSampleParameter2D'"M_Cave_Landscape_Master:MaterialExpressionTextureSampleParameter2D_0"',OutputIndex=1,Mask=1,MaskR=1)
+      ConstExponent=3.000000
+      MaterialExpressionEditorX=-4195
+      MaterialExpressionEditorY=1405
+      MaterialExpressionGuid=60DC5A6D402079131C928185FAC51E26
+      Material=Material'"M_Cave_Landscape_Master"'
+      bRealtimePreview=True
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=1.000000
+      ParameterName="Snow Modulation Scale 1"
+      ExpressionGUID=A8149D744FC8A335C43826A36C23A779
+      MaterialExpressionEditorX=-6140
+      MaterialExpressionEditorY=640
+      MaterialExpressionGuid=FBF4AE074EE68795046ADDB793C7ACE2
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_23"
+      DefaultValue=1.000000
+      ParameterName="Rock Near Normal Intensity"
+      ExpressionGUID=DBC4837F4E13120388761F83E67E1445
+      MaterialExpressionEditorX=-4777
+      MaterialExpressionEditorY=-345
+      MaterialExpressionGuid=52B2ACF44F0A5874F9B1559CAE457194
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      DefaultValue=0.800000
+      ParameterName="EgeBrightness"
+      ExpressionGUID=324472ED4EA4ED6B76DA7FA72AC899F6
+      Group="Fuzz"
+      MaterialExpressionEditorX=-2047
+      MaterialExpressionEditorY=402
+      MaterialExpressionGuid=77D79DDE4A1CE2904783B9B8BC0D9189
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_4"
+      DefaultValue=1.000000
+      ParameterName="Rock Tile Near"
+      ExpressionGUID=61F3A0AA4DE84BA51DB5D2AA473279CE
+      MaterialExpressionEditorX=-4437
+      MaterialExpressionEditorY=-645
+      MaterialExpressionGuid=9AA250ED4613E4EB29AE39B067AD54D8
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_5"
+      DefaultValue=2.000000
+      ParameterName="EdgePower"
+      ExpressionGUID=4FC4EC334CC0811C90D149B4FFD614B2
+      Group="Fuzz"
+      MaterialExpressionEditorX=-2007
+      MaterialExpressionEditorY=282
+      MaterialExpressionGuid=30AB95264779D9D0FEB4BE9921D4FD53
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_59"
+      DefaultValue=1.000000
+      ParameterName="Snow Normal Tiling"
+      ExpressionGUID=607136BA42558C112B5C8CA47E60384D
+      MaterialExpressionEditorX=-6140
+      MaterialExpressionEditorY=540
+      MaterialExpressionGuid=93444E5C42AD597C2C21308CD0918A53
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_6"
+      DefaultValue=0.800000
+      ParameterName="CoreDarkness"
+      ExpressionGUID=AFDB5B444B3F9CAD4136A7A1C854E963
+      Group="Fuzz"
+      MaterialExpressionEditorX=-2027
+      MaterialExpressionEditorY=162
+      MaterialExpressionGuid=334B65984FBDBF745D9DD598F7914923
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_8"
+      DefaultValue=1.000000
+      ParameterName="Snow Tile Near"
+      ExpressionGUID=9CDFBBC248071DB0B18E6DA96AE13C2C
+      MaterialExpressionEditorX=-6080
+      MaterialExpressionEditorY=340
+      MaterialExpressionGuid=3F54191A4B5C1CBAEE2662BF3D769096
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionStaticBoolParameter_1"
+      DefaultValue=True
+      ParameterName="FuzzyShading"
+      ExpressionGUID=01C1215742C087EAF3DFA0874BBF497B
+      MaterialExpressionEditorX=-2077
+      MaterialExpressionEditorY=536
+      MaterialExpressionGuid=BD0D6E6A45B74A6397D1D5A727911202
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_1"
+      ParameterName="Snow_01_Disp"
+      ExpressionGUID=75441C3B4DC322A6C865E39505A9DE0E
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_LS_Snow_01_D_Disp.T_LS_Snow_01_D_Disp"'
+      MaterialExpressionEditorX=-6120
+      MaterialExpressionEditorY=760
+      MaterialExpressionGuid=A804FA86422F999A2582D5A7C035FEAF
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_10"
+      ParameterName="Snow_01_D"
+      ExpressionGUID=BB733EB04928195F36BA7EB50E7CA91C
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_Snow_D.T_Cave_Snow_D"'
+      MaterialExpressionEditorX=-6180
+      MaterialExpressionEditorY=-60
+      MaterialExpressionGuid=6F4E004540CD880FAA50509CFD62D9E6
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_11"
+      ParameterName="Snow_01_N"
+      ExpressionGUID=5CA7B76543392E74C2B6759175D69553
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_SnowMound_01_N.T_SnowMound_01_N"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-6180
+      MaterialExpressionEditorY=140
+      MaterialExpressionGuid=7221075A41EB2A273304EBB8030A1081
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_4"
+      ParameterName="Rock_01_DetailNormal"
+      ExpressionGUID=C1DBB20B45282AFF88C832B4AA12C85B
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_CaveRock_Detail_N_2.T_CaveRock_Detail_N_2"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-4752
+      MaterialExpressionEditorY=-997
+      MaterialExpressionGuid=3695E51E4E6ED08EE30A7BBEEDF734A3
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_6"
+      ParameterName="Rock_01_N"
+      ExpressionGUID=B89ED10440ACA76AA280F1B7FE729754
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_CaveRock_Detail_N.T_CaveRock_Detail_N"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-4752
+      MaterialExpressionEditorY=-777
+      MaterialExpressionGuid=154EC276448A497B5DA487AF6DF16818
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObjectParameter_7"
+      ParameterName="Rock_01_D"
+      ExpressionGUID=2909C35D428021EBCD149EAEC2151D82
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_MountainRock_D.T_Cave_MountainRock_D"'
+      MaterialExpressionEditorX=-4752
+      MaterialExpressionEditorY=-1197
+      MaterialExpressionGuid=0B13784C4E7EAE6117277AB2064AC6C3
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSampleParameter2D_0"
+      ParameterName="Snow Alpha"
+      ExpressionGUID=36108CF6402F29A296E2B287F7B95C84
+      Coordinates=(Expression=MaterialExpressionLandscapeLayerCoords'"M_Cave_Landscape_Master:MaterialExpressionLandscapeLayerCoords_0"')
+      Texture=Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Kaly_Flowy.T_Kaly_Flowy"'
+      MaterialExpressionEditorX=-4635
+      MaterialExpressionEditorY=1305
+      MaterialExpressionGuid=0A48A03447E3057319A723AABF947F4D
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.750000)
+      ParameterName="Rock Color"
+      ExpressionGUID=3F3E874F40343ED2743FE694384970A1
+      MaterialExpressionEditorX=-4752
+      MaterialExpressionEditorY=-577
+      MaterialExpressionGuid=6468B27245934E2C0C65FD8C6A0C9CA0
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_2"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.750000)
+      ParameterName="Snow Color"
+      ExpressionGUID=1C802ACB4B832A85D69F02A0053638F5
+      MaterialExpressionEditorX=-6148
+      MaterialExpressionEditorY=1000
+      MaterialExpressionGuid=157B5C5F404F3E19231BD4ACD798F36A
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_7"
+      DefaultValue=(R=0.500000,G=0.700000,B=1.000000,A=1.000000)
+      ParameterName="Snow Subsurface Color"
+      ExpressionGUID=CAEAB25A4011FD4CC2348ABD28B5AF60
+      MaterialExpressionEditorX=-797
+      MaterialExpressionEditorY=978
+      MaterialExpressionGuid=2857B2704199BEDC303E8B9B8D4E6C4D
+      Material=Material'"M_Cave_Landscape_Master"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_4"
+   End Object
+   BaseColor=(Expression=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   Specular=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_7"')
+   Roughness=(Constant=0.423800,Expression=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"',OutputIndex=3,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"',OutputIndex=8,Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(OutputIndex=-1)
+   ShadingModel=MSM_Subsurface
+   ShadingModels=(ShadingModelField=4)
+   WorldDisplacement=(OutputIndex=-1)
+   TessellationMultiplier=(OutputIndex=-1)
+   SubsurfaceColor=(Expression=MaterialExpressionMultiply'"MaterialExpressionMultiply_9"')
+   bUsedWithSkeletalMesh=True
+   bUsedWithStaticLighting=True
+   Expressions(0)=MaterialExpressionBreakMaterialAttributes'"MaterialExpressionBreakMaterialAttributes_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(2)=MaterialExpressionConstant'"MaterialExpressionConstant_7"'
+   Expressions(3)=MaterialExpressionMultiply'"MaterialExpressionMultiply_9"'
+   Expressions(4)=MaterialExpressionClamp'"MaterialExpressionClamp_0"'
+   Expressions(5)=MaterialExpressionAdd'"MaterialExpressionAdd_2"'
+   Expressions(6)=MaterialExpressionMultiply'"MaterialExpressionMultiply_16"'
+   Expressions(7)=MaterialExpressionTextureSampleParameter2D'"MaterialExpressionTextureSampleParameter2D_0"'
+   Expressions(8)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_13"'
+   Expressions(9)=MaterialExpressionPower'"MaterialExpressionPower_2"'
+   Expressions(10)=MaterialExpressionMultiply'"MaterialExpressionMultiply_10"'
+   Expressions(11)=MaterialExpressionPower'"MaterialExpressionPower_0"'
+   Expressions(12)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_16"'
+   Expressions(13)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_1"'
+   Expressions(14)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_2"'
+   Expressions(15)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(16)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_59"'
+   Expressions(17)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_8"'
+   Expressions(18)=MaterialExpressionTextureObjectParameter'"MaterialExpressionTextureObjectParameter_1"'
+   Expressions(19)=MaterialExpressionTextureObjectParameter'"MaterialExpressionTextureObjectParameter_11"'
+   Expressions(20)=MaterialExpressionTextureObjectParameter'"MaterialExpressionTextureObjectParameter_10"'
+   Expressions(21)=MaterialExpressionMultiply'"MaterialExpressionMultiply_11"'
+   Expressions(22)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_7"'
+   Expressions(23)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_14"'
+   Expressions(24)=MaterialExpressionStaticBoolParameter'"MaterialExpressionStaticBoolParameter_1"'
+   Expressions(25)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   Expressions(26)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_5"'
+   Expressions(27)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_6"'
+   Expressions(28)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_8"'
+   Expressions(29)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_12"'
+   Expressions(30)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_23"'
+   Expressions(31)=MaterialExpressionAppendVector'"MaterialExpressionAppendVector_3"'
+   Expressions(32)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   Expressions(33)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_4"'
+   Expressions(34)=MaterialExpressionTextureObjectParameter'"MaterialExpressionTextureObjectParameter_4"'
+   Expressions(35)=MaterialExpressionTextureObjectParameter'"MaterialExpressionTextureObjectParameter_6"'
+   Expressions(36)=MaterialExpressionTextureObjectParameter'"MaterialExpressionTextureObjectParameter_7"'
+   Expressions(37)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_4"'
+   Expressions(38)=MaterialExpressionLinearInterpolate'"MaterialExpressionLinearInterpolate_7"'
+   Expressions(39)=MaterialExpressionConstant'"MaterialExpressionConstant_10"'
+   Expressions(40)=MaterialExpressionLandscapeLayerCoords'"MaterialExpressionLandscapeLayerCoords_0"'
+   EditorComments(0)=MaterialExpressionComment'"MaterialExpressionComment_22"'
+   EditorComments(1)=MaterialExpressionComment'"MaterialExpressionComment_23"'
+   EditorComments(2)=MaterialExpressionComment'"MaterialExpressionComment_24"'
+   EditorComments(3)=MaterialExpressionComment'"MaterialExpressionComment_25"'
+   EditorComments(4)=MaterialExpressionComment'"MaterialExpressionComment_26"'
+   EditorComments(5)=MaterialExpressionComment'"MaterialExpressionComment_27"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=7BF619FD434524095462DFB71D77ECE5
+   CachedExpressionData=(Parameters=(Entries[0]=(NameHashes=(885798899678650750,1846388018993542814,6830728381982499602,9559852227482970634,10372467755399858966,14078083692007238267,15446175146188857071,15557493385303427783),ParameterInfos=((Name="Rock Tile Near"),(Name="Snow Tile Near"),(Name="EgeBrightness"),(Name="CoreDarkness"),(Name="Rock Near Normal Intensity"),(Name="EdgePower"),(Name="Snow Modulation Scale 1"),(Name="Snow Normal Tiling")),ExpressionGuids=(61F3A0AA4DE84BA51DB5D2AA473279CE,9CDFBBC248071DB0B18E6DA96AE13C2C,324472ED4EA4ED6B76DA7FA72AC899F6,AFDB5B444B3F9CAD4136A7A1C854E963,DBC4837F4E13120388761F83E67E1445,4FC4EC334CC0811C90D149B4FFD614B2,A8149D744FC8A335C43826A36C23A779,607136BA42558C112B5C8CA47E60384D),Overrides=(False,False,False,False,False,False,False,False)),Entries[1]=(NameHashes=(7862234307934796006,12782667952086516621,17441000823096353576),ParameterInfos=((Name="Snow Subsurface Color"),(Name="Snow Color"),(Name="Rock Color")),ExpressionGuids=(CAEAB25A4011FD4CC2348ABD28B5AF60,1C802ACB4B832A85D69F02A0053638F5,3F3E874F40343ED2743FE694384970A1),Overrides=(False,False,False)),Entries[2]=(NameHashes=(717358031804164745,4350083321446513899,5740653585060010188,11563583448209512075,13739740019429913448,17236904731707778506,17392864544227547606),ParameterInfos=((Name="Rock_01_D"),(Name="Rock_01_DetailNormal"),(Name="Snow_01_N"),(Name="Snow_01_D"),(Name="Rock_01_N"),(Name="Snow Alpha"),(Name="Snow_01_Disp")),ExpressionGuids=(2909C35D428021EBCD149EAEC2151D82,C1DBB20B45282AFF88C832B4AA12C85B,5CA7B76543392E74C2B6759175D69553,BB733EB04928195F36BA7EB50E7CA91C,B89ED10440ACA76AA280F1B7FE729754,36108CF6402F29A296E2B287F7B95C84,75441C3B4DC322A6C865E39505A9DE0E),Overrides=(False,False,False,False,False,False,False)),ScalarValues=(1.000000,1.000000,0.800000,0.800000,1.000000,2.000000,1.000000,1.000000),VectorValues=((R=0.500000,G=0.700000,B=1.000000,A=1.000000),(R=1.000000,G=1.000000,B=1.000000,A=0.750000),(R=1.000000,G=1.000000,B=1.000000,A=0.750000)),TextureValues=(Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_MountainRock_D.T_Cave_MountainRock_D"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_CaveRock_Detail_N_2.T_CaveRock_Detail_N_2"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_SnowMound_01_N.T_SnowMound_01_N"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_Snow_D.T_Cave_Snow_D"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_CaveRock_Detail_N.T_CaveRock_Detail_N"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Kaly_Flowy.T_Kaly_Flowy"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_LS_Snow_01_D_Disp.T_LS_Snow_01_D_Disp"'),ScalarMinMaxValues=((X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000)),ScalarCurveValues=(None,None,None,None,None,None,None,None),ScalarCurveAtlasValues=(None,None,None,None,None,None,None,None),VectorChannelNameValues=((),(),()),VectorUsedAsChannelMaskValues=(False,False,False),TextureChannelNameValues=((),(),(),(),(),(),())),ReferencedTextures=(Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Kaly_Flowy.T_Kaly_Flowy"',None,Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_Ice_Noise_D.T_Cave_Ice_Noise_D"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_CaveRock_Detail_N.T_CaveRock_Detail_N"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_MountainRock_D.T_Cave_MountainRock_D"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_LS_Snow_01_D_Disp.T_LS_Snow_01_D_Disp"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_SnowMound_01_N.T_SnowMound_01_N"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_Cave_Snow_D.T_Cave_Snow_D"',Texture2D'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Textures/T_CaveRock_Detail_N_2.T_CaveRock_Detail_N_2"'),FunctionInfos=((StateId=FF88F68A47211BABBD0A288ADCA340CA,Function=MaterialFunction'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/MaterialFunctions/MF_Cave_Landscape.MF_Cave_Landscape"'),(StateId=5255AFC649A7576A25B61D92D1F204E5,Function=MaterialFunction'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/MaterialFunctions/MF_FuzzyShading.MF_FuzzyShading"'),(StateId=892D7BBB413A0586E4D10BA8F0545AD5,Function=MaterialFunction'"/Engine/Functions/MaterialLayerFunctions/MatLayerBlend_Standard.MatLayerBlend_Standard"'),(StateId=FF88F68A47211BABBD0A288ADCA340CA,Function=MaterialFunction'"/Game/AssetPacks/ModularSciFiSeason1/StarterBundle/UE4_Assets/Environment_B/Materials/MaterialFunctions/MF_Cave_Landscape.MF_Cave_Landscape"')),QualityLevelsUsed=(False,True,False))
+   ReferencedTextureGuids(0)=D33A91FF44BD2A62A77D40B093E12397
+   ReferencedTextureGuids(1)=172D698C4E5981C8F8B3839DD3CFF758
+   ReferencedTextureGuids(2)=76B669B44B38157773E996B502077439
+   ReferencedTextureGuids(3)=1568AC5D4E8709B549192289CE1597BB
+   ReferencedTextureGuids(4)=8A72849A497871A7BD52D1B13A59A444
+   ReferencedTextureGuids(5)=C78A13AA412844AE85617E8E10920831
+   ReferencedTextureGuids(6)=DAA095694D089A81C357139FCAC4ED92
+   ReferencedTextureGuids(7)=65653CC544A30328FD88199BFEC14A5E
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_4"'
+   ParameterOverviewExpansion=(("-12Fuzz", True),("-12None", True))
+   LightingGuid=F6F9813842D1C98FBD7AD2BE865A5767
+End Object

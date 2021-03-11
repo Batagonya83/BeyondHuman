@@ -138,3 +138,9 @@ void ABeyondHumanCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
+/*
+bool ABeyondHumanCharacter::IsDead() const
+{
+	return Health <= 0;
+}
+*/

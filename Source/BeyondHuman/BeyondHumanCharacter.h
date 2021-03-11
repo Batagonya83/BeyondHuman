@@ -18,8 +18,15 @@ class ABeyondHumanCharacter : public ACharacter
 	/** Follow camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
+
+	/** Character Health. */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Character)
+	//float Health;
 public:
 	ABeyondHumanCharacter();
+
+	//UFUNCTION(BlueprintPure)
+	//bool IsDead() const;
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
