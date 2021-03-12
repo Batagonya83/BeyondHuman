@@ -19,14 +19,21 @@ class ABeyondHumanCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class UCameraComponent* FollowCamera;
 
+private:
+	UPROPERTY(EditDefaultsOnly)
+	float MaxHealth = 100;
+
 	/** Character Health. */
 	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Character)
-	//float Health;
+	float Health;
 public:
 	ABeyondHumanCharacter();
 
-	//UFUNCTION(BlueprintPure)
-	//bool IsDead() const;
+	UPROPERTY(BlueprintReadWrite)
+	bool IsDead;
+
+	UFUNCTION(BlueprintPure)
+	bool CheckDead();
 
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -37,6 +44,8 @@ public:
 	float BaseLookUpRate;
 
 protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 
 	/** Resets HMD orientation in VR. */
 	void OnResetVR();

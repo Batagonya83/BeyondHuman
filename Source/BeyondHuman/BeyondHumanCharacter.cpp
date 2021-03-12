@@ -47,6 +47,20 @@ ABeyondHumanCharacter::ABeyondHumanCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
+// Called when the game starts or when spawned
+void ABeyondHumanCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	Health = MaxHealth;
+/*
+	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
+	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
+	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+	Gun->SetOwner(this);
+*/
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 
@@ -138,9 +152,16 @@ void ABeyondHumanCharacter::MoveRight(float Value)
 		AddMovementInput(Direction, Value);
 	}
 }
-/*
-bool ABeyondHumanCharacter::IsDead() const
+
+bool ABeyondHumanCharacter::CheckDead()
 {
-	return Health <= 0;
+	if (Health <= 0)
+	{
+		IsDead = true;
+	}
+	else
+	{
+		IsDead = false;
+	}
+	return IsDead;
 }
-*/
