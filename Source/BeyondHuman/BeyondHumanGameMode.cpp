@@ -13,3 +13,8 @@ ABeyondHumanGameMode::ABeyondHumanGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+void ABeyondHumanGameMode::PawnKilled(APawn* PawnKilled)
+{
+
+}

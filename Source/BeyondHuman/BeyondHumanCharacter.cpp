@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "BeyondHumanCharacter.h"
+#include "Gun.h"
+
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -8,6 +10,8 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "BeyondHumanGameMode.h"
+
 
 //////////////////////////////////////////////////////////////////////////
 // ABeyondHumanCharacter
@@ -53,12 +57,14 @@ void ABeyondHumanCharacter::BeginPlay()
 	Super::BeginPlay();
 
 	Health = MaxHealth;
-/*
+	
 	Gun = GetWorld()->SpawnActor<AGun>(GunClass);
-	GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
-	Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
-	Gun->SetOwner(this);
-*/
+	if (Gun)
+	{
+		GetMesh()->HideBoneByName(TEXT("weapon_r"), EPhysBodyOp::PBO_None);
+		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
+		Gun->SetOwner(this);
+	}
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -164,4 +170,31 @@ bool ABeyondHumanCharacter::CheckDead()
 		IsDead = false;
 	}
 	return IsDead;
+}
+
+float ABeyondHumanCharacter::TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser)
+{
+	float DamageToApply = Super::TakeDamage(DamageAmount, DamageEvent, EventInstigator, DamageCauser);
+	DamageToApply = FMath::Min(Health, DamageToApply);
+	Health -= DamageToApply;
+	UE_LOG(LogTemp, Warning, TEXT("Health left %f"), Health);
+	
+	if (CheckDead())
+	{
+		ABeyondHumanGameMode* GameMode = GetWorld()->GetAuthGameMode<ABeyondHumanGameMode>();
+		if (GameMode != nullptr)
+		{
+			GameMode->PawnKilled(this);
+		}
+
+		DetachFromControllerPendingDestroy();
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
+	
+	return DamageToApply;
+}
+
+void ABeyondHumanCharacter::Shoot()
+{
+	Gun->PullTrigger();
 }

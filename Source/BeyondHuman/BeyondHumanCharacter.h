@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "BeyondHumanCharacter.generated.h"
 
+class AGun;
+
 UCLASS(config=Game)
 class ABeyondHumanCharacter : public ACharacter
 {
@@ -26,6 +28,12 @@ private:
 	/** Character Health. */
 	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Character)
 	float Health;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<AGun> GunClass;
+
+	UPROPERTY()
+	AGun* Gun;
 public:
 	ABeyondHumanCharacter();
 
@@ -84,5 +92,9 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
+	void Shoot();
 };
 

@@ -13,6 +13,8 @@ class ABeyondHumanGameMode : public AGameModeBase
 
 public:
 	ABeyondHumanGameMode();
+
+	virtual void PawnKilled(APawn* PawnKilled);
 };
 
 
