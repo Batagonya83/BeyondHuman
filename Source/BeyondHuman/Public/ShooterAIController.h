@@ -17,6 +17,8 @@ class BEYONDHUMAN_API AShooterAIController : public AAIController
 public:
 	virtual void BeginPlay() override;
 
+	virtual void Tick(float DeltaSeconds) override;
+
 private:
 	UPROPERTY(EditAnywhere)
 	class UBehaviorTree* AIBehavior;

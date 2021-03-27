@@ -2,6 +2,9 @@
 
 #include "BeyondHumanCharacter.h"
 #include "Gun.h"
+#include "Public/MyGameplayAbility.h"
+#include "AbilitySystemGlobals.h"
+#include "Net/UnrealNetwork.h"
 
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Camera/CameraComponent.h"
@@ -47,6 +50,9 @@ ABeyondHumanCharacter::ABeyondHumanCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
+	// Create ability system component, and set it to be explicitly replicated
+	AbilitySystemComponent = CreateDefaultSubobject<UAbilitySystemComponent_C>(TEXT("AbilitySystemComponent"));
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -65,6 +71,13 @@ void ABeyondHumanCharacter::BeginPlay()
 		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("WeaponSocket"));
 		Gun->SetOwner(this);
 	}
+}
+
+void ABeyondHumanCharacter::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(ABeyondHumanCharacter, CharacterLevel);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -88,6 +101,8 @@ void ABeyondHumanCharacter::SetupPlayerInputComponent(class UInputComponent* Pla
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &ABeyondHumanCharacter::LookUpAtRate);
 
+	PlayerInputComponent->BindAction(TEXT("Shoot"),
+		EInputEvent::IE_Pressed, this, &ABeyondHumanCharacter::Shoot);
 	// handle touch devices
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &ABeyondHumanCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &ABeyondHumanCharacter::TouchStopped);
@@ -197,4 +212,74 @@ float ABeyondHumanCharacter::TakeDamage(float DamageAmount, struct FDamageEvent 
 void ABeyondHumanCharacter::Shoot()
 {
 	Gun->PullTrigger();
+}
+
+/*Gameplay Ability System Functions*/
+UAbilitySystemComponent* ABeyondHumanCharacter::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComponent;
+}
+
+void ABeyondHumanCharacter::AddStartupGameplayAbilities()
+{
+
+}
+
+void ABeyondHumanCharacter::RemoveStartupGameplayAbilities()
+{
+}
+
+void ABeyondHumanCharacter::AddSlottedGameplayAbilities()
+{
+
+}
+
+float ABeyondHumanCharacter::GetHealth() const
+{
+	return 0.0;
+}
+
+float ABeyondHumanCharacter::GetMaxHealth() const
+{
+	return 0.0;
+}
+
+float ABeyondHumanCharacter::GetMana() const
+{
+	return 0.0;
+}
+
+float ABeyondHumanCharacter::GetMaxMana() const
+{
+	return 0.0;
+}
+
+float ABeyondHumanCharacter::GetMoveSpeed() const
+{
+	return 0.0;
+}
+
+int32 ABeyondHumanCharacter::GetCharacterLevel() const
+{
+	return 0;
+}
+
+bool ABeyondHumanCharacter::SetCharacterLevel(int32 NewLevel)
+{
+	return true;
+}
+
+bool ABeyondHumanCharacter::ActivateAbilitiesWithTags(FGameplayTagContainer AbilityTags, bool bAllowRemoteActivation)
+{
+	return true;
+}
+
+void ABeyondHumanCharacter::GetActiveAbilitiesWithTags(FGameplayTagContainer AbilityTags, TArray<UMyGameplayAbility*>& ActiveAbilities)
+{
+
+}
+
+bool ABeyondHumanCharacter::GetCooldownRemainingForTag(FGameplayTagContainer CooldownTags, float& TimeRemaining, float& CooldownDuration)
+{
+	return true;
 }
